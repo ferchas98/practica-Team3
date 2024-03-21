@@ -1,22 +1,333 @@
-:root {
-  --accent-brand-lighter-rgb: 80, 99, 301;
-  --accent-brand-rgb: 59, 73, 223;
-  --accent-brand-darker-rgb: 47, 58, 178;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-.cls-1 {
-  fill: none;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.cls-2 {
-  -webkit-clip-path: url(#clippath);
-          clip-path: url(#clippath);
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: rgba(227, 240, 240, 0.638);
 }
 
-.cls-3 {
-  fill: #fff;
+/*seccion de titulos*/
+.navegacion {
+  display: flex;
+  justify-content: start;
 }
 
-.cls-4 {
-  fill: #0f0f0f;
+.hipervinculo {
+  padding: 2rem;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+  font-size: 2rem;
+}
+
+.relevante {
+  font-weight: bold;
+  color: rgb(23, 23, 23);
+}
+
+.hipervinculo:hover {
+  color: blue;
+  background-color: white;
+}
+
+/*Seccion imagen principal*/
+.img_principal {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/*seccion comentarios*/
+/*Seccion de contenedores*/
+.contenedor_comentarios {
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+}
+
+.contenedor_perfiles {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+.dev_contenedor {
+  width: 100%;
+  height: 100%;
+}
+
+.dev_logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.div_avatar {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 55%;
+  left: 58%;
+}
+
+.div_avatar_principal {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.info_avatar {
+  position: relative;
+  left: 1.5rem;
+  bottom: 1.6rem;
+}
+
+.titulo_comentario {
+  position: relative;
+  bottom: 4rem;
+  left: 0;
+}
+
+.hastags {
+  position: relative;
+  bottom: 5rem;
+  left: 0;
+}
+
+.reacciones {
+  position: relative;
+  bottom: 3rem;
+  left: 0;
+  height: 42.75px;
+  width: 100%;
+}
+
+.contenedor_emoji {
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  margin-right: -0.75em;
+  width: 28px;
+  height: 28px;
+}
+
+.emoji {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.contenedor_emojis {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.emojis {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding-inline-end: 1em;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  height: 36px;
+  padding: 1rem;
+}
+
+.emojis_chat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vistos {
+  display: flex;
+  align-items: center;
+}
+
+.reacciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*textos*/
+p {
+  color: rgb(64, 64, 64);
+  font-size: 1.5rem;
+}
+
+.leido {
+  font-size: 1.2rem;
+  margin-right: 1em;
+}
+
+.guardar {
+  padding: 1rem;
+}
+
+.fecha {
+  font-size: 1.5rem;
+  color: rgb(64, 64, 64);
+}
+
+.comentario_principal {
+  font-size: 25px;
+  color: black;
+}
+
+.hastag {
+  display: inline;
+  color: rgb(64, 64, 64);
+  padding: 0.5rem;
+}
+
+.contador {
+  margin-left: 1em;
+  margin-bottom: 1px;
+  color: rgb(64, 64, 64);
+}
+
+/*hovers*/
+.hastag:hover {
+  color: rgb(23, 23, 23);
+}
+
+.discuss_hover:hover {
+  background-color: rgba(132, 242, 122, 0.499);
+  border: 1px solid rgb(6, 248, 6);
+  border-radius: 1rem;
+}
+
+.weekly_hover:hover {
+  background-color: rgba(244, 246, 137, 0.499);
+  border: 1px solid rgb(228, 248, 6);
+  border-radius: 1rem;
+}
+
+.gover_hover:hover {
+  background-color: rgba(137, 215, 246, 0.499);
+  border: 1px solid rgb(6, 228, 248);
+  border-radius: 1rem;
+}
+
+.fastly_hover:hover {
+  background-color: rgba(246, 137, 148, 0.499);
+  border: 1px solid rgb(248, 6, 6);
+  border-radius: 1rem;
+}
+
+.community_hover:hover {
+  background-color: rgba(246, 137, 224, 0.499);
+  border: 1px solid rgb(248, 6, 220);
+  border-radius: 1rem;
+}
+
+.career_hover:hover {
+  background-color: rgba(246, 137, 224, 0.978);
+  border: 1px solid rgba(248, 6, 220, 0.593);
+  border-radius: 1rem;
+}
+
+.devto_hover:hover {
+  background-color: rgba(246, 186, 137, 0.978);
+  border: 1px solid rgba(242, 213, 116, 0.141);
+  border-radius: 1rem;
+}
+
+.beginner_hover:hover {
+  background-color: rgba(124, 160, 121, 0.499);
+  border: 1px solid rgb(6, 145, 6);
+  border-radius: 1rem;
+}
+
+.writing_hover:hover {
+  background-color: rgba(121, 135, 160, 0.499);
+  border: 1px solid rgb(6, 59, 145);
+  border-radius: 1rem;
+}
+
+.water_hover:hover {
+  background-color: rgba(160, 121, 121, 0.499);
+  border: 1px solid rgba(145, 6, 6, 0.592);
+  border-radius: 1rem;
+}
+
+.contador:hover {
+  color: rgb(23, 23, 23);
+  cursor: pointer;
+}
+
+.guardar:hover {
+  background-color: rgba(167, 163, 231, 0.832);
+  cursor: pointer;
+}
+
+.emojis, .chat:hover {
+  background-color: rgba(0, 0, 0, 0.035);
+  border: transparent;
+  border-radius: 2rem;
+  color: rgb(23, 23, 23);
+}
+
+/*hastags*/
+.hastag_discuss {
+  color: rgba(24, 238, 9, 0.911);
+}
+
+.hastag_weekly {
+  color: rgba(255, 255, 0, 0.71);
+}
+
+.hastag_gover {
+  color: rgb(68, 244, 244);
+}
+
+.hastag_fastly {
+  color: red;
+}
+
+.hastag_community {
+  color: rgb(103, 4, 103);
+}
+
+.hastag_career {
+  color: rgb(248, 26, 151);
+}
+
+.hastag_devto {
+  color: rgb(248, 163, 5);
+}
+
+.hastag_beginner {
+  color: rgb(151, 250, 4);
+}
+
+.hastag_writing {
+  color: blue;
+}
+
+.hastag_water {
+  color: brown;
 }/*# sourceMappingURL=main.css.map */
