@@ -75,22 +75,29 @@ nav {
   border-bottom: 1px solid whitesmoke;
 }
 
-.textod,
-.encabezadot, .textodnuevo {
+.textod,.encabezadot, .textodtres  {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
   display: inline-block;
   margin-bottom: 5px;
 }
-
+.textodnuevo,.textodtres {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
 .textod:hover,
-.encabezadot:hover,.textodnuevo:hover {
+.encabezadot:hover{
   color: blue;
 }
 .textodnuevo:hover {
   color: blue;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.9;
 }
 
 .letritas {
@@ -108,6 +115,7 @@ nav {
   padding: 15px;
   margin-top: 0px;
   border-bottom: 1px solid whitesmoke;/* Asegura que ocupe al menos el 100% del viewport height */
+  
 }
 
 
@@ -125,7 +133,7 @@ nav {
   }
 
   .textod,
-  .encabezadot {
+  .encabezadot, .textodnuevo, .textodtres {
     font-size: 1rem;
   }
 
