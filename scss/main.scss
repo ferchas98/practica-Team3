@@ -90,6 +90,16 @@ nav {
   display: inline-block;
   margin-bottom: 5px;
 }
+.textodnuevoagain {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
 .textod:hover,
 .encabezadot:hover{
   color: blue;
@@ -110,11 +120,11 @@ nav {
   display: flex;
 }
 .headernuevos {
-  border: 1px none red;
+
   background-color: rgb(251, 252, 252);
   padding: 15px;
   margin-top: 0px;
-  border-bottom: 1px solid whitesmoke;/* Asegura que ocupe al menos el 100% del viewport height */
+  
   
 }
 
