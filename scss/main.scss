@@ -1,20 +1,157 @@
-:root {
-    --accent-brand-lighter-rgb: 80, 99, 301;
-    --accent-brand-rgb: 59, 73, 223;
-    --accent-brand-darker-rgb: 47, 58, 178;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.cls-1 {
-    fill: none;
+
+body {
+  background-color: rgb(251, 252, 252);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.938);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  margin-bottom: 5px;
+}
+
+.asideleft {
+  border: 1px none blue;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mainContent {
+  border: 1px none green;
+  width: 50%;
+  background-color: rgba(117, 54, 54, 0.7);
+}
+
+.headeruno {
+  border: 1px none red;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.938);
+  padding: 20px 0 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Asegura que ocupe al menos el 100% del viewport height */
+}
+
+.encabezadouno {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  /* margin-bottom: 10px; */
+  /* display: display-block; */
+  /* border-bottom: 1px solid whitesmoke; */
+  padding: 10px 20px;
+}
+
+.encabezadouno:hover {
+  color: blue;
+}
+
+.textouno {
+  color: rgb(94, 92, 92);
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-bottom: 1px solid whitesmoke;
+  font-size: medium;
+
+}
+
+.headerdos,
+.headertres {
+  background-color: rgba(255, 255, 255, 0.938);
+  padding: 15px;
+  margin-top: 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.textod,
+.encabezadot, .textodnuevo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.textod:hover,
+.encabezadot:hover,.textodnuevo:hover {
+  color: blue;
+}
+.textodnuevo:hover {
+  color: blue;
+  background-color: rgb(228, 228, 228);
+}
+
+.letritas {
+  font-size: small;
+  color: rgb(185, 184, 184);
+}
+
+.pageContent {
+  margin-top: 30px;
+  display: flex;
+}
+.headernuevos {
+  border: 1px none red;
+  background-color: rgb(251, 252, 252);
+  padding: 15px;
+  margin-top: 0px;
+  border-bottom: 1px solid whitesmoke;/* Asegura que ocupe al menos el 100% del viewport height */
+}
+
+
+@media only screen and (max-width: 576px) {
+  .headeruno {
+    width: 100%; /* El header ocupa el 100% del ancho en dispositivos pequeños */
   }
 
-  .cls-2 {
-    clip-path: url(#clippath);
+  .encabezadouno {
+    font-size: 1.5rem;
   }
 
-  .cls-3 {
-    fill: #fff;
+  .textouno {
+    font-size: 1rem;
   }
 
-  .cls-4 {
-    fill: #0f0f0f;
+  .textod,
+  .encabezadot {
+    font-size: 1rem;
   }
+
+  .letritas {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .asideleft {
+    width: 20%;
+  }
+
+  .mainContent {
+    width: 50%;
+  }
+
+  .headeruno {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .pageContent {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+}
