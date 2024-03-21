@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,7 +65,6 @@ nav {
   padding: 10px 20px;
   border-bottom: 1px solid whitesmoke;
   font-size: medium;
-
 }
 
 .headerdos,
@@ -85,9 +85,10 @@ nav {
 }
 
 .textod:hover,
-.encabezadot:hover,.textodnuevo:hover {
+.encabezadot:hover, .textodnuevo:hover {
   color: blue;
 }
+
 .textodnuevo:hover {
   color: blue;
   background-color: rgb(228, 228, 228);
@@ -102,28 +103,33 @@ nav {
   margin-top: 30px;
   display: flex;
 }
+
 .headernuevos {
   border: 1px none red;
   background-color: rgb(251, 252, 252);
   padding: 15px;
   margin-top: 0px;
-  border-bottom: 1px solid whitesmoke;/* Asegura que ocupe al menos el 100% del viewport height */
+  border-bottom: 1px solid whitesmoke; /* Asegura que ocupe al menos el 100% del viewport height */
 }
 
 .container {
   display: flex;
   justify-content: space-between;
 }
+
 .column {
   width: 30%;
 }
+
 .column.middle {
   width: 40%;
 }
+
 .list {
   list-style-type: none;
   padding: 0;
 }
+
 .scroll {
   height: 200px;
   overflow-y: scroll;
@@ -142,10 +148,12 @@ nav {
 .column.middle {
   width: 40%;
 }
+
 .list {
   list-style-type: none;
   padding: 0;
 }
+
 .scroll {
   height: 200px;
   overflow-y: scroll;
@@ -154,18 +162,22 @@ nav {
 .tamaño {
   width: 20px;
 }
+
 li {
   margin-bottom: 10px;
 }
+
 ul {
   margin-left: 15px;
 }
+
 h2 {
   margin-bottom: 10px;
   margin-top: 40px;
   font-size: 15px;
   margin-left: 0px;
 }
+
 h3 {
   margin-left: 0px;
 }
@@ -188,65 +200,53 @@ h3 {
 .koala {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 600px) {
   .column {
-      width: 100%;
+    width: 100%;
   }
 }
-
 @media (min-width: 900px) {
-  .column  {
-      width:100%;
+  .column {
+    width: 100%;
   }
 }
-
-
 @media only screen and (max-width: 576px) {
   .headeruno {
     width: 100%; /* El header ocupa el 100% del ancho en dispositivos pequeños */
   }
-
   .encabezadouno {
     font-size: 1.5rem;
   }
-
   .textouno {
     font-size: 1rem;
   }
-
   .textod,
   .encabezadot {
     font-size: 1rem;
   }
-
   .letritas {
     font-size: x-small;
   }
 }
-
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .asideleft {
     width: 20%;
   }
-
   .mainContent {
     width: 50%;
   }
-
   .headeruno {
     width: 30%;
   }
 }
-
 @media only screen and (min-width: 993px) {
   .pageContent {
     width: 80%;
     margin: 30px auto;
   }
-
 }
-
 /*# sourceMappingURL=main.css.map */
