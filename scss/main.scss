@@ -124,6 +124,7 @@ main {
 .pageContent {
   margin-top: 30px;
   display: flex;
+  justify-content: space-around;
 }
 
 .headernuevos {
@@ -274,7 +275,9 @@ h3 {
 
 .header1{
   display: flex;
-    align-items: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .search{
@@ -296,9 +299,8 @@ h3 {
 }
 
 .loged{
-  margin-right: 160px;
-  margin-left: 973px;
-font-size: 30px;
+  margin-left: auto;
+  font-size: 30px;
 }
 
 .accounted{
@@ -677,3 +679,34 @@ p {
   }
 }
 /*# sourceMappingURL=main.css.map */
+//nav = .arriba//
+//columna_derecha = .asideleft
+//central = .principal
+//columna_izquierda = .headeruno
+//contenedor = pageContent
+
+@media screen and (max-width: 576px) {
+  .asideleft, .headeruno {
+    display: none;
+  }
+  header {
+    min-width: 576px;
+  }
+}
+@media screen and (min-width:768px) {
+  .asideleft, .headeruno {
+    display: block;
+  }
+  .asideleft {
+    max-width: 30%;
+  }
+  .principal {
+    max-width: 40%;
+  }
+  .cardleft {
+    max-width: 100%;
+  }
+  header {
+    min-width: 768px;
+  }
+}
