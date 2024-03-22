@@ -246,11 +246,12 @@ h3 {
 }
 
 .linkcreate {
-  border: 2px solid blue;
-  border-radius: 10px;
-  font-size: 30px;
-  color: blue;
   margin-bottom: 20px;
+  font-size: 30px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  color: blue;
+  padding: 10px;
 }
 
 .linklog {
